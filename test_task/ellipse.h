@@ -5,6 +5,6 @@ class Ellipse : public Figure
 {
 public:
 	Ellipse();
-	void getCoordinate(double t) override;
-	void getDerivative(double t) override;
+	ThreeDim getCoordinate(double t) override;
+	ThreeDim getDerivative(double t) override;
 };

@@ -3,12 +3,8 @@
 
 #pragma once
 
-#define _USE_MATH_DEFINES
-
 #include <iostream>
 #include <list>
-#include "figure.h"
 #include "circle.h"
 #include "ellipse.h"
-#include <math.h>
 

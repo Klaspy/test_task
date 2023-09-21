@@ -3,7 +3,7 @@
 #
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (test_task "test_task.cpp" "test_task.h" "figure.h" "figure.cpp" "circle.h" "circle.cpp" "ellipse.h" "ellipse.cpp" "helix.h")
+add_executable (test_task "test_task.cpp" "test_task.h" "figure.h" "figure.cpp" "circle.h" "circle.cpp" "ellipse.h" "ellipse.cpp" "helix.h" "helix.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET test_task PROPERTY CXX_STANDARD 20)

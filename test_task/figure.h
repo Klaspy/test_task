@@ -1,9 +1,15 @@
 #pragma once
+
+#define _USE_MATH_DEFINES
+
 #include <iostream>
 #include <list>
 #include <random>
+#include <math.h>
 
 using namespace std;
+
+struct ThreeDim { double x; double y; double z; };
 
 enum figureType {
 	circle,
@@ -14,8 +20,8 @@ enum figureType {
 class Figure
 {
 public:
-	void virtual getCoordinate(double t);
-	void virtual getDerivative(double t);
+	ThreeDim virtual getCoordinate(double t);
+	ThreeDim virtual getDerivative(double t);
 	figureType getFigureType();
 
 protected:

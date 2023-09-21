@@ -1,11 +1,13 @@
 #include "figure.h"
 
-void Figure::getCoordinate(double t)
+ThreeDim Figure::getCoordinate(double t)
 {
+	return ThreeDim(0, 0, 0);
 }
 
-void Figure::getDerivative(double t)
+ThreeDim Figure::getDerivative(double t)
 {
+	return ThreeDim(0, 0, 0);
 }
 
 figureType Figure::getFigureType()

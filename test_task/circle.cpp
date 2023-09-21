@@ -9,18 +9,18 @@ Circle::Circle()
 	funcParms.push_back(dist(gen));
 }
 
-void Circle::getCoordinate(double t)
+ThreeDim Circle::getCoordinate(double t)
 {
 	double x = funcParms[0] * cos(t), y = funcParms[0] * sin(t), z = 0;
 	x = floor(x * 100) / 100;
 	y = floor(y * 100) / 100;
-	cout.precision(2);
-	cout << "coordinate: {" << x << "; " << y << "; " << z << "}";
+	return ThreeDim(x, y, z);
 }
 
-void Circle::getDerivative(double t)
+ThreeDim Circle::getDerivative(double t)
 {
-	double derivative = (1 / -tan(t));
-	derivative = floor(derivative * 100) / 100;
-	cout << "derivative: " << derivative;
+	double x = -funcParms[0] * sin(t), y = funcParms[0] * cos(t), z = 0;
+	x = floor(x * 100) / 100;
+	y = floor(y * 100) / 100;
+	return ThreeDim(x, y, z);
 }
