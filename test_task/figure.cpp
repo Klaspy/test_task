@@ -10,25 +10,31 @@ ThreeDim Figure::getDerivative(double t)
 	return ThreeDim(0, 0, 0);
 }
 
-figureType Figure::getFigureType()
+string Figure::getFigureType()
 {
+	string typeStr;
 	switch (type)
 	{
 	case (figureType::circle):
 	{
-		cout << "Circle";
+		typeStr = "Circle";
 		break;
 	}
 	case (figureType::ellipse):
 	{
-		cout << "Ellipse";
+		typeStr = "Ellipse";
 		break;
 	}
 	case (figureType::helix):
 	{
-		cout << "Helix";
+		typeStr = "Helix";
+		break;
+	}
+	default:
+	{
+		typeStr = "Err";
 		break;
 	}
 	}
-	return type;
+	return typeStr;
 }

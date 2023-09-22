@@ -22,7 +22,7 @@ class Figure
 public:
 	ThreeDim virtual getCoordinate(double t);
 	ThreeDim virtual getDerivative(double t);
-	figureType getFigureType();
+	string getFigureType();
 
 protected:
 	vector<int> funcParms;
